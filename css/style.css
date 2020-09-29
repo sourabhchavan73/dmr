@@ -1,0 +1,670 @@
+*, p {
+    margin: 0;
+    padding: 0;
+  }
+
+@font-face {
+    font-family: 'Candara';
+    src: url('../fonts/MicrosoftYaHei.ttf') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('../fonts/MicrosoftYaHei.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('../fonts/corbel.ttf') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+     url('../fonts/corbel.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  }  
+
+  a, a:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+
+button, input{
+    text-decoration: none;
+    outline: none!important;
+    border: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    text-decoration: none;
+    outline: none!important;
+    
+}
+
+/* navigation */
+.navbar-default {
+  background-color: #fff;
+  border: none;
+}
+
+
+
+nav .dropdown-toggle::after {
+    display: none;
+}
+
+nav .navbar .open{
+  background: #fff;
+}
+  
+.nav-link, .nav-link:hover, .dropdown-toggle{
+    opacity: 0.85;
+    color: #4A4A4A!important;
+    font-family: "Microsoft YaHei";
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.nav-item{
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.nav-btn{
+    border-radius: 5px;
+    background-color: #FF5F58;  
+    color: #FFF;
+    font-family: "Microsoft YaHei";
+    font-size: 11px;
+    line-height: 15px;
+    padding: 10px 20px;
+}
+
+nav .dropdown-menu{
+    background-color: #FFF;
+    border: none;
+}
+
+.nav-drop p{
+    opacity: 0.85;
+    color: #4A4A4A;
+    padding: 0 15px;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 45px;
+}
+
+.nav-drop p:nth-child(1){
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.nav-drop a, .nav-drop a:hover{
+    opacity: 0.85;
+    color: #FF5F58!important;
+    font-family: "Microsoft YaHei";
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-decoration: none;
+} 
+
+.navbar-nav, .navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    min-width: 14rem;
+    left: 1em;
+}
+
+/* main section */
+
+.main .dropdown-toggle{
+    color: #464646;
+    font-family: "Microsoft YaHei";
+    font-size: 11px;
+    background-color: #fff;
+    padding: 11px 13px;
+    width: 100%;
+}
+
+.main .dropdown-toggle::after {
+    margin-left: 1em;
+}
+
+.main .dropdown-toggle-first{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.main .book-now-btn{
+    width: 15%;
+    border-radius: 0 5px 5px 0;
+    background-color: #FF5F58;
+    color: #FFF;
+    font-family: "Microsoft YaHei";
+    font-size: 11px;
+    line-height: 15px;
+    
+}
+
+.main input{
+    padding: 10px 20px;
+    color: #464646;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 15px;
+    width: 85%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+}
+
+.dropdown-arrow {
+    position: absolute;
+    top: 15px;
+    right: 11px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: #464646;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #464646;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+  }
+  
+  ::placeholder {
+    color: #464646;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+  }
+
+  .main h1{
+    color: #FFF;
+    font-family: "Corbel Light";
+    font-size: 48px;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .main p{
+    color: #FFF;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .main form{
+      margin-top: 4em;
+  }
+
+  .main-bg-img{
+    background: url(../images/banner.jpg);
+    min-height: 250px;
+    height: 550px;
+    position: relative;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+  }
+
+  .main-bg-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* section two - servicing-section */
+
+  .servicing-section-row{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4.5em;
+  }
+
+  .servicing-section h3{
+    color: #4A4A4A;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .servicing-section p{
+    opacity: 0.85;
+    color: #4A4A4A;
+    font-family: "Microsoft YaHei";
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .page-headers{
+    color: #4A4A4A;
+    font-family: "Corbel Light";
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .servicing-section .section-padding{
+      padding: 5em 0 6em 0;
+  }
+
+
+
+  /* section three - service-slider-section */
+  .service-slider-section{
+    background-color: #FF5F58;
+  }
+
+  .service-slider-section .section-padding{
+    padding: 5em 0px 8em 0;
+  }
+
+  .service-slider-section h2{
+    color: #FFF;
+    font-family: "Corbel Light";
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+ 
+  }
+
+  .service-slider-card{
+    border-radius: 10px;
+    background-color: #FFF;
+  }
+
+  .slider-card-header{
+    color: #4A4A4A;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  .slider-card-content{
+    opacity: 0.85;
+    color: #6F6F6F;
+    font-family: "Microsoft YaHei";
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .slider-card-pricetag{
+    opacity: 0.85;
+    color: #FF5F58;
+    font-family: "Microsoft YaHei";
+    font-size: 11px;
+    line-height: 15px;
+    padding-top: 10px;
+  }
+
+  .slider-card-inner {
+    padding: 18px 1.5em 18px 1.5em;
+}
+
+.slider-control-next-icon{
+    position: absolute;
+    right: -45px;
+    top: 4em;
+}
+
+.slider-control-prev-icon{
+    position: absolute;
+    left: -45px;
+    top: 4em;
+}
+
+.carousel-indicators  li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    
+  }
+
+  .carousel-indicators {
+    bottom: -5em;
+}
+
+.slider{
+    margin-top: 4.5em;
+}
+
+/* section three - why us section */
+.why-us-title{
+    color: #4A4A4A;
+    font-family: "Corbel Light";
+    font-size: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding-bottom: 0.5em;
+}
+
+.why-us-content p{
+    opacity: 0.85;
+    color: #6F6F6F;
+    font-family: "Microsoft YaHei";
+    font-size: 13px;
+    line-height: 1.55;
+    padding-bottom: 1em;
+}
+
+.whyus-list-block{
+  margin-bottom: 1.5em;
+}
+
+.why-us-section h3{
+    color: #4A4A4A;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.whyus-list-block p{
+  opacity: 0.85;
+  color: #6F6F6F;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  line-height: 1.55;
+  padding-bottom: 0.5em;
+}
+
+.whyus-list-img{
+  margin-right: 1.5em;
+}
+
+.why-us-row{
+  display: flex;
+  align-items: center;
+}
+
+.why-us-section .section-padding{
+  padding: 5em 0 20em 0;
+}
+
+.more-service-card{
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 0 10px 100px 0 rgba(221,221,221,0.5);
+    width: 100%;
+    position: absolute;
+    top: 6em;
+}
+
+.moreservice-card-inner{
+  padding: 4em 5em 5em 5em;
+}
+
+.more-service-card h2{
+    color: #4A4A4A;
+    font-family: "Corbel Light";
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: .5em;
+}
+
+.more-service-card p{
+  opacity: 0.85;
+  color: #6F6F6F;
+  font-family: "Microsoft YaHei";
+  font-size: 13px;
+  line-height: 1.55;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+.moreservice-row {
+  margin-top: 2.5em;
+}
+
+.moreservice-row .col{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.moreservice-row h3{
+  color: #4A4A4A;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  line-height: 21px;
+  padding-top: 1em;
+}
+
+.allpart-link-btn{
+    border-radius: 5px;
+    background-color: #FF5F58;
+    color: #FFF;
+    font-family: "Microsoft YaHei";
+    font-size: 11px;
+    line-height: 15px;
+    padding: 10px 25px;
+    margin-top: 4em;
+}
+
+/* section four - available-locations-section */
+.available-locations-section{
+    background-color: #F2F2F2;
+}
+
+.available-locations-section .section-padding{
+  padding: 20em 0 4em 0;
+}
+
+.available-locations-section h2{
+    color: #4A4A4A;
+    font-family: "Corbel Light";
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.available-locations-col{
+  display: flex;
+  justify-content: center;
+}
+
+.available-locations-row{
+  margin-top: 4em;
+}
+
+.available-locations-col p{
+    opacity: 0.85;
+    color: #4A4A4A;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 3.33;
+    text-align: center;
+}
+
+
+/* section five - available-locations-section */
+.rating-card{
+    border-radius: 10px;
+    background-color: rgba(242,242,242,0.59);
+}
+
+.rating-card-inner{
+  padding: 30px 20px;
+}
+
+.rating-card p{
+    opacity: 0.85;
+    color: #6F6F6F;
+    font-family: "Microsoft YaHei";
+    font-size: 11.5px;
+    line-height: 2.77;
+    padding-bottom: 0.5em;
+}
+
+.rating-section-header h2{
+  color: #FF5F58;
+  font-family: Corbel;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+.rating-section-header p{
+    opacity: 0.85;
+    color: #6F6F6F;
+    font-family: "Microsoft YaHei";
+    line-height: 15px;
+    text-align: center;
+    line-height: 1.44;
+}
+
+.rating-section-row{
+  margin-top: 3em;
+}
+
+.rating-section .section-padding{
+  padding: 5em 0;
+}
+
+/* section six - rating-section */
+.download-applink-title{
+  color: #313131;
+  font-family: Corbel;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 1em;
+}
+
+.download-applink-header p{
+    opacity: 0.85;
+    color: #3E3E3E;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 1.55;
+    padding-bottom: 1em;
+
+}
+
+.circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF5F58;
+    margin-right: 15px;
+}
+
+.download-app-section button{
+  background-color: #fff;
+    opacity: 0.85;
+    color: #3E3E3E;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px 20px;
+    width: 35%;
+    cursor: pointer;
+}
+
+.download-applink-section{
+  background-color: #C2D0DF;
+}
+
+.download-play-link, .download-app-section{
+  margin-top: 3em;
+}
+
+.download-play-link p{
+  opacity: 0.85;
+  color: #3E3E3E;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.download-img-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.download-applink-section .section-padding{
+  padding: 3em 0;
+}
+
+.download-applink-row{
+  display: flex;
+  align-items: center;
+}
+
+/* footer */
+footer{
+    background-color: #ECECEC;
+}
+
+footer .section-padding{
+  padding: 5em 0 2em 0;
+}
+
+.footer-col{
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer h2, h3{
+    color: #313131;
+    font-family: Corbel;
+    font-size: 28px;
+    line-height: 30px;
+    padding-bottom: .5em;
+}
+
+footer p{
+    opacity: 0.85;
+    color: #3E3E3E;
+    font-family: "Microsoft YaHei";
+    font-size: 13px;
+    line-height: 1.33;
+    padding-bottom: 1em;
+}
+
+.footer-col a{
+    display: block;
+    opacity: 0.85;
+    color: #3E3E3E;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    padding-bottom: 2em;
+}
+
+.copy-right-title{
+  opacity: 0.85;
+  color: #3E3E3E;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+}
+
+.copyright-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.social-links a{
+  margin: 0 5px;
+}
+
